@@ -1,11 +1,16 @@
-import { Button } from "@/components/ui/button";
+import { Routes, Route } from "react-router-dom";
+import RootLayout from "./shared/components/layout/root-layout";
+import Dashboard from "./pages/dashboard";
 
-function App() {
+const App = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-svh">
-      <Button variant={"default"}>Click me</Button>
-    </div>
+    <Routes>
+      <Route element={<RootLayout />}>
+        <Route path="/" element={<Dashboard />} />
+      </Route>
+      <Route path="*" element={<div>Not Found Page</div>} />
+    </Routes>
   );
-}
+};
 
 export default App;
