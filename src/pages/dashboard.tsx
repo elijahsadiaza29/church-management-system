@@ -1,11 +1,16 @@
+import { ModeToggle } from "@/components/mode-toggle";
 import Sidebar from "@/shared/components/Partials/sidebar";
 
 const Dashboard = () => {
   return (
-    <div>
+    <main className="grid grid-cols-[250px_1fr] h-screen">
       <Sidebar />
-      <main>This is dashboard layout</main>
-    </div>
+      <section>
+        <header>nav</header>
+        <ModeToggle />
+        This is dashboard layout
+      </section>
+    </main>
   );
 };
 
