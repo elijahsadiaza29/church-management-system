@@ -1,11 +1,11 @@
 import Dashboard from "@/pages/dashboard";
 import { createFileRoute } from "@tanstack/react-router";
 
-export const Route = createFileRoute("/")({
-  component: RouteComponent,
+export const Route = createFileRoute("/dashboard/")({
+  component: DashboardLayout,
 });
 
-function RouteComponent() {
+function DashboardLayout() {
   return (
     <div>
       <Dashboard />
