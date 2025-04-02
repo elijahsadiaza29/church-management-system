@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
-import RootLayout from "./shared/components/layout/root-layout";
 import Dashboard from "./pages/dashboard";
+import RootLayout from "./layout/root-layout";
 
 const App = () => {
   return (

@@ -1,5 +1,5 @@
 import { ModeToggle } from "@/components/mode-toggle";
-import Sidebar from "@/shared/components/Partials/sidebar";
+import Sidebar from "@/components/shared/sidebar";
 
 const Dashboard = () => {
   return (
